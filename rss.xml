@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>BottleTestBlog</title>
+    <link>https://bottlesome.github.io/test/</link>
+    <description>Testing Blog</description>
+    <item>
+        <title>Hello world</title>
+        <link>https://bottlesome.github.io/test/neko0.html</link>
+        <guid>https://bottlesome.github.io/test/neko0.html</guid>
+        <description><![CDATA[Hello world!]]></description>
+        <category><![CDATA[test]]></category><category><![CDATA[test]]></category>
+        <pubDate>Sat, 22 Oct 2022 04:04:18 GMT</pubDate>
+    </item>
+    
+</channel>
+</rss>

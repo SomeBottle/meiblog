@@ -1,0 +1,84 @@
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--description-->
+    <meta name="description" content="" />
+    <!--Keywords-->
+    <meta name="keywords" content="bottle" />
+</head>
+<loadingarea></loadingarea>
+<div id='container'>
+    <style>
+        #container {
+            opacity: 0;
+            word-wrap: break-word;
+            word-break: break-all;
+            max-width: 50%;
+            overflow: hidden
+        }
+    </style>
+    {(MainTitle)}
+    <title>bottle</title>
+    {(MainTitleEnd)}
+
+    <body>
+        {(PostTitle)}{(PostTitleEnd)} 
+        {(PostDate)}{[date]}{(PostDateEnd)} 
+        {(PostContent)} 
+&lt;h2&gt;
+  &lt;a href=&#039;neko0.html&#039; class=&#039;itemlink&#039;&gt;Hello world&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;
+&lt;/p&gt;
+
+&lt;p class=&#039;itemintro&#039;&gt;Hello world!...&lt;/p&gt;
+&lt;small class=&#039;small-date&#039;&gt;2022-10-22&lt;/small&gt;
+&lt;!--Tags:test·test--&gt;
+&lt;hr&gt;
+ {(PostContentEnd)} 
+        {(PostTag)}{[tags]}{(PostTagEnd)} 
+        {(PostID)}{[pid]}{(PostIDEnd)} 
+        {(PostCover)}{[cover]}{(PostCoverEnd)}
+        {(PubTime)}{[pubtime]}{(PubTimeEnd)}
+        {(EditTime)}{[edittime]}{(EditTimeEnd)}
+        <div style='display:none;'>{(PageType)}postlist.otp.html{(PageTypeEnd)}</div>
+        <script src="./barn/main.js"></script>
+    <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</div>
