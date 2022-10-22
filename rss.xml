@@ -5,6 +5,14 @@
     <link>https://bottlesome.github.io/test/</link>
     <description>Testing Blog</description>
     <item>
+        <title>Test3</title>
+        <link>https://bottlesome.github.io/test/neko2.html</link>
+        <guid>https://bottlesome.github.io/test/neko2.html</guid>
+        <description><![CDATA[test page3]]></description>
+        
+        <pubDate>Sat, 22 Oct 2022 04:20:29 GMT</pubDate>
+    </item>
+    <item>
         <title>Test2</title>
         <link>https://bottlesome.github.io/test/neko1.html</link>
         <guid>https://bottlesome.github.io/test/neko1.html</guid>
